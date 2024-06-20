@@ -14,6 +14,8 @@ npm install
 ```bash
 code .
 ```
+- rename the file `.env.example` to `.env`
+- edit the `.env` file and replace the `AWS_KEY` with your key and the `AWS_SECRET_KEY` with your secret key and save the file
 
 - open the vscode terminal
 - run the dev server
@@ -24,14 +26,14 @@ npm run dev
 
 
 ### TODO
-- [] change the server.js file at line 47
+- change the server.js file at line 47
 
 current line 47:
 ```JavaScript
   res.send(`<audio controls src=${JSON.stringify(audioUrl)}></audio>`);
 ```
 
-look up `res.json()` [here](https://flaviocopes.com/express-send-json-response/)
+read up about `res.json()` [here](https://flaviocopes.com/express-send-json-response/)
 
 then make the output of line 47 to actually output:
 ```json
